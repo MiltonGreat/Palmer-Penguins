@@ -4,6 +4,21 @@
 
 The Palmer Penguins Dataset consists of data on penguin species from the Palmer Archipelago in Antarctica. The dataset includes various physical attributes like body mass, flipper length, and culmen dimensions for different penguin species. This dataset is great for exploratory data analysis, statistical modeling, and machine learning.
 
+### Quality Issues:
+
+- Missing data for some physical attributes (e.g., body mass).
+- Outliers due to measurement errors.
+- Potential data collection biases in habitat or species distribution.
+
+Cleaning/Transformation:
+- Impute missing values using species-specific means or medians.
+- Visualize outliers and decide on retention or removal based on domain knowledge.
+- Encode categorical variables like "species" using one-hot encoding.
+
+Known Limitations:
+- Limited geographic scope of the dataset.
+- Potential seasonal or migratory effects not captured in the dataset.
+
 ### Datasets
 
 penguins_size.csv - This simplified version of the dataset contains the following variables:
