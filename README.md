@@ -64,6 +64,41 @@ A heatmap was generated to display the correlation between the numerical feature
 
 A groupby operation was performed to calculate the number of penguins of each species present on each island. The results show that Gentoo penguins are predominantly found on Biscoe and Dream islands, while Chinstrap penguins are mainly found on Dream island.
 
+### Key Findings
+
+- Missing Values: The dataset had missing values in numerical features (culmen dimensions, flipper length, and body mass) and the categorical feature sex.
+
+- Outliers: Outliers were identified and removed to improve data quality, ensuring better modeling performance.
+
+- Correlation Analysis:
+  - Flipper length showed the strongest positive correlation with body mass (r = 0.87).
+  - Culmen length had a moderate positive correlation with body mass (r = 0.60).
+  - Culmen depth exhibited a weak negative correlation with body mass.
+
+- Species Distribution Across Islands:
+  - Gentoo penguins were predominantly found on Biscoe and Dream islands.
+  - Chinstrap penguins were mainly observed on Dream island.
+
+- One-Hot Encoding: Binary columns for Chinstrap and Gentoo species were created for effective model integration.
+
+### Future Work
+
+Advanced Modeling:
+- Build classification models such as Logistic Regression, Random Forest, and Gradient Boosting to predict penguin species.
+- Use regression models to predict numerical characteristics like body mass.
+
+Hyperparameter Optimization:
+- Experiment with tuning model hyperparameters to improve accuracy and performance.
+
+Feature Engineering:
+- Create interaction terms between culmen dimensions and flipper length to capture non-linear relationships.
+
+Cross-Validation:
+- Perform k-fold cross-validation to ensure robust evaluation of models.
+
+Comparative Analysis:
+- Compare the penguin dataset with similar datasets from different regions to identify global trends in penguin morphology.
+
 ### Source
 
 https://www.kaggle.com/datasets/parulpandey/palmer-archipelago-antarctica-penguin-data
