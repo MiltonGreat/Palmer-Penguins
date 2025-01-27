@@ -1,4 +1,4 @@
-# Palmer-Penguins
+# Palmer Penguins
 
 ### Overview
 
@@ -20,6 +20,16 @@ Data Analysis:
 - Investigate relationships between physical characteristics and species.
 - Explore the distribution of penguins across islands.
 - Create visualizations to compare species and their characteristics.
+
+### EDA Questions
+
+I want to answer the following questions:
+
+1. What is the distribution of penguin body mass across the dataset?
+2. How does body mass vary between different species?
+3. What is the correlation between physical features of the penguins (culmen length, culmen depth, flipper length, and body mass)?
+4. How are penguin species distributed across different islands?
+5. Are there any patterns or differences in the body mass of penguins based on species?
 
 ### Datasets
 
