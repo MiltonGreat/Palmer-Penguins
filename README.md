@@ -95,20 +95,20 @@ A groupby operation was performed to calculate the number of penguins of each sp
 
 ### Future Work
 
-Advanced Modeling:
+1. Advanced Modeling:
 - Build classification models such as Logistic Regression, Random Forest, and Gradient Boosting to predict penguin species.
 - Use regression models to predict numerical characteristics like body mass.
 
-Hyperparameter Optimization:
+2. Hyperparameter Optimization:
 - Experiment with tuning model hyperparameters to improve accuracy and performance.
 
-Feature Engineering:
+3. Feature Engineering:
 - Create interaction terms between culmen dimensions and flipper length to capture non-linear relationships.
 
-Cross-Validation:
+4. Cross-Validation:
 - Perform k-fold cross-validation to ensure robust evaluation of models.
 
-Comparative Analysis:
+5. Comparative Analysis:
 - Compare the penguin dataset with similar datasets from different regions to identify global trends in penguin morphology.
 
 ### Source
