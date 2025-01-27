@@ -48,6 +48,8 @@ penguins_lter.csv - The original combined data for the three penguin species, ag
   
 ### Key Visualizations
 
+![screenshot-github com-2025 01 27-13_35_33](https://github.com/user-attachments/assets/054a55cf-6894-4fbd-9b87-8a9f05c92d43)
+
 - Body Mass Distribution: A histogram to visualize the distribution of penguin body mass across the dataset.
 - Boxplots by Species: Boxplots for comparing the body mass distribution for different species (Gentoo and Chinstrap).
 - Species Comparison: A side-by-side boxplot comparing the body mass of Chinstrap and Gentoo species.
