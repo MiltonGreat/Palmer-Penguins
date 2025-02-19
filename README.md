@@ -2,7 +2,7 @@
 
 ### Overview
 
-The Palmer Penguins Dataset consists of data on penguin species from the Palmer Archipelago in Antarctica. The dataset includes various physical attributes like body mass, flipper length, and culmen dimensions for different penguin species. This dataset is great for exploratory data analysis, statistical modeling, and machine learning.
+The Palmer Penguins Dataset contains data on penguin species from the Palmer Archipelago in Antarctica. This dataset includes physical attributes such as body mass, flipper length, and culmen dimensions for three penguin species: Adelie, Chinstrap, and Gentoo. The project focuses on exploratory data analysis (EDA), data cleaning, feature transformation, and building a machine learning model to classify penguin species based on these physical attributes.
 
 ### Objectives
 
@@ -20,6 +20,11 @@ Data Analysis:
 - Investigate relationships between physical characteristics and species.
 - Explore the distribution of penguins across islands.
 - Create visualizations to compare species and their characteristics.
+
+Machine Learning:
+- Train a model to classify penguin species based on physical attributes.
+- Evaluate model performance using precision, recall, and F1-score.
+- Identify the most important features influencing the classification.
 
 ### EDA Questions
 
@@ -69,12 +74,23 @@ penguins_lter.csv - The original combined data for the three penguin species, ag
 
 A heatmap was generated to display the correlation between the numerical features (culmen length, culmen depth, flipper length, and body mass). Significant correlations were found between:
 
-- flipper length and body mass (strong positive correlation).
-- culmen length and body mass (moderate positive correlation).
+- Flipper length and body mass: Strong positive correlation (r = 0.87).
+- Culmen length and body mass: Moderate positive correlation (r = 0.60).
+- Culmen depth: Exhibited a weak negative correlation with body mass.
 
 ### Species Distribution Across Islands
 
 A groupby operation was performed to calculate the number of penguins of each species present on each island. The results show that Gentoo penguins are predominantly found on Biscoe and Dream islands, while Chinstrap penguins are mainly found on Dream island.
+
+### Machine Learning Model
+
+**Model Performance**:
+- The classifier performed very well for Gentoo (100% precision and recall), Adelie (98% precision, 96% recall), and Chinstrap (89% precision, 94% recall).
+- Overall accuracy of the model was 97%, indicating a robust classification system.
+
+**Feature Importance**:
+- Culmen length (beak length) was the most important feature for species classification.
+- Flipper length and culmen depth were also significant, while body mass played a lesser role in distinguishing species.
 
 ### Key Findings
 
@@ -91,25 +107,11 @@ A groupby operation was performed to calculate the number of penguins of each sp
   - Gentoo penguins were predominantly found on Biscoe and Dream islands.
   - Chinstrap penguins were mainly observed on Dream island.
 
-- One-Hot Encoding: Binary columns for Chinstrap and Gentoo species were created for effective model integration.
+- Species Distribution Across Islands:
+    - Gentoo penguins were found mainly on Biscoe and Dream islands, while Chinstrap penguins were most commonly observed on Dream island.
 
-### Future Work
-
-1. Advanced Modeling:
-- Build classification models such as Logistic Regression, Random Forest, and Gradient Boosting to predict penguin species.
-- Use regression models to predict numerical characteristics like body mass.
-
-2. Hyperparameter Optimization:
-- Experiment with tuning model hyperparameters to improve accuracy and performance.
-
-3. Feature Engineering:
-- Create interaction terms between culmen dimensions and flipper length to capture non-linear relationships.
-
-4. Cross-Validation:
-- Perform k-fold cross-validation to ensure robust evaluation of models.
-
-5. Comparative Analysis:
-- Compare the penguin dataset with similar datasets from different regions to identify global trends in penguin morphology.
+- Feature Importance:
+    - The model relied most heavily on culmen length to classify species, followed by flipper length and culmen depth.
 
 ### Source
 
